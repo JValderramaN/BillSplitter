@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB01ECF7246C668D00A9F385 /* AuthenticatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB01ECF6246C668D00A9F385 /* AuthenticatorViewModel.swift */; };
 		ABE2A882246C530100CB1289 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE2A881246C530100CB1289 /* AppDelegate.swift */; };
-		ABE2A886246C530100CB1289 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE2A885246C530100CB1289 /* ViewController.swift */; };
+		ABE2A886246C530100CB1289 /* AuthenticatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE2A885246C530100CB1289 /* AuthenticatorViewController.swift */; };
 		ABE2A889246C530100CB1289 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABE2A887246C530100CB1289 /* Main.storyboard */; };
 		ABE2A88B246C530500CB1289 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABE2A88A246C530500CB1289 /* Assets.xcassets */; };
 		ABE2A88E246C530500CB1289 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABE2A88C246C530500CB1289 /* LaunchScreen.storyboard */; };
@@ -26,9 +27,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		ABE2A87E246C530100CB1289 /* BillSplitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BillSplitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB01ECF6246C668D00A9F385 /* AuthenticatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticatorViewModel.swift; sourceTree = "<group>"; };
+		ABE2A87E246C530100CB1289 /* Bill Splitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bill Splitter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABE2A881246C530100CB1289 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ABE2A885246C530100CB1289 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ABE2A885246C530100CB1289 /* AuthenticatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticatorViewController.swift; sourceTree = "<group>"; };
 		ABE2A888246C530100CB1289 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ABE2A88A246C530500CB1289 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABE2A88D246C530500CB1289 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -68,7 +70,7 @@
 		ABE2A87F246C530100CB1289 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ABE2A87E246C530100CB1289 /* BillSplitter.app */,
+				ABE2A87E246C530100CB1289 /* Bill Splitter.app */,
 				ABE2A894246C530500CB1289 /* BillSplitterTests.xctest */,
 			);
 			name = Products;
@@ -77,12 +79,8 @@
 		ABE2A880246C530100CB1289 /* BillSplitter */ = {
 			isa = PBXGroup;
 			children = (
-				ABE2A881246C530100CB1289 /* AppDelegate.swift */,
-				ABE2A885246C530100CB1289 /* ViewController.swift */,
-				ABE2A887246C530100CB1289 /* Main.storyboard */,
-				ABE2A88A246C530500CB1289 /* Assets.xcassets */,
-				ABE2A88C246C530500CB1289 /* LaunchScreen.storyboard */,
-				ABE2A88F246C530500CB1289 /* Info.plist */,
+				ABE2A8A3246C5E4000CB1289 /* App */,
+				ABE2A8A4246C5E6F00CB1289 /* Supporting Files */,
 			);
 			path = BillSplitter;
 			sourceTree = "<group>";
@@ -94,6 +92,83 @@
 				ABE2A89A246C530500CB1289 /* Info.plist */,
 			);
 			path = BillSplitterTests;
+			sourceTree = "<group>";
+		};
+		ABE2A8A3246C5E4000CB1289 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				ABE2A8A5246C5F3100CB1289 /* Base */,
+				ABE2A8A6246C5F3700CB1289 /* Modules */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		ABE2A8A4246C5E6F00CB1289 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ABE2A881246C530100CB1289 /* AppDelegate.swift */,
+				ABE2A88A246C530500CB1289 /* Assets.xcassets */,
+				ABE2A88C246C530500CB1289 /* LaunchScreen.storyboard */,
+				ABE2A88F246C530500CB1289 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ABE2A8A5246C5F3100CB1289 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		ABE2A8A6246C5F3700CB1289 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				ABE2A8A7246C5F4600CB1289 /* Main */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		ABE2A8A7246C5F4600CB1289 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				ABE2A8A8246C5F5900CB1289 /* Model */,
+				ABE2A8A9246C5F5D00CB1289 /* View */,
+				ABE2A8AA246C5F6400CB1289 /* View Model */,
+				ABE2A8AB246C5F6A00CB1289 /* Controller */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		ABE2A8A8246C5F5900CB1289 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ABE2A8A9246C5F5D00CB1289 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ABE2A887246C530100CB1289 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ABE2A8AA246C5F6400CB1289 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				AB01ECF6246C668D00A9F385 /* AuthenticatorViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		ABE2A8AB246C5F6A00CB1289 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ABE2A885246C530100CB1289 /* AuthenticatorViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,7 +188,7 @@
 			);
 			name = BillSplitter;
 			productName = BillSplitter;
-			productReference = ABE2A87E246C530100CB1289 /* BillSplitter.app */;
+			productReference = ABE2A87E246C530100CB1289 /* Bill Splitter.app */;
 			productType = "com.apple.product-type.application";
 		};
 		ABE2A893246C530500CB1289 /* BillSplitterTests */ = {
@@ -197,7 +272,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABE2A886246C530100CB1289 /* ViewController.swift in Sources */,
+				ABE2A886246C530100CB1289 /* AuthenticatorViewController.swift in Sources */,
+				AB01ECF7246C668D00A9F385 /* AuthenticatorViewModel.swift in Sources */,
 				ABE2A882246C530100CB1289 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,13 +436,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5TE8VJRL4Q;
-				INFOPLIST_FILE = BillSplitter/Info.plist;
+				INFOPLIST_FILE = "BillSplitter/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = josevalderrama.BillSplitter;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Bill Splitter";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -378,13 +454,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5TE8VJRL4Q;
-				INFOPLIST_FILE = BillSplitter/Info.plist;
+				INFOPLIST_FILE = "BillSplitter/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = josevalderrama.BillSplitter;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Bill Splitter";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
