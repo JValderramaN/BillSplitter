@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		AB01ECF7246C668D00A9F385 /* AuthenticatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB01ECF6246C668D00A9F385 /* AuthenticatorViewModel.swift */; };
+		AB01ECFE246C6DC800A9F385 /* Bill.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB01ECFD246C6DC800A9F385 /* Bill.storyboard */; };
+		AB01ED05246C6E3F00A9F385 /* Person.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB01ED04246C6E3F00A9F385 /* Person.storyboard */; };
+		AB01ED0C246C72F700A9F385 /* Configuration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB01ED0B246C72F700A9F385 /* Configuration.storyboard */; };
 		ABE2A882246C530100CB1289 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE2A881246C530100CB1289 /* AppDelegate.swift */; };
 		ABE2A886246C530100CB1289 /* AuthenticatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE2A885246C530100CB1289 /* AuthenticatorViewController.swift */; };
 		ABE2A889246C530100CB1289 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABE2A887246C530100CB1289 /* Main.storyboard */; };
@@ -28,6 +31,9 @@
 
 /* Begin PBXFileReference section */
 		AB01ECF6246C668D00A9F385 /* AuthenticatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticatorViewModel.swift; sourceTree = "<group>"; };
+		AB01ECFD246C6DC800A9F385 /* Bill.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Bill.storyboard; sourceTree = "<group>"; };
+		AB01ED04246C6E3F00A9F385 /* Person.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Person.storyboard; sourceTree = "<group>"; };
+		AB01ED0B246C72F700A9F385 /* Configuration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Configuration.storyboard; sourceTree = "<group>"; };
 		ABE2A87E246C530100CB1289 /* Bill Splitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bill Splitter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABE2A881246C530100CB1289 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABE2A885246C530100CB1289 /* AuthenticatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticatorViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +64,126 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB01ECF8246C6D8A00A9F385 /* Bill */ = {
+			isa = PBXGroup;
+			children = (
+				AB01ECFC246C6DB100A9F385 /* Model */,
+				AB01ECFB246C6DAC00A9F385 /* View */,
+				AB01ECFA246C6DA600A9F385 /* View Model */,
+				AB01ECF9246C6D9D00A9F385 /* Controller */,
+			);
+			path = Bill;
+			sourceTree = "<group>";
+		};
+		AB01ECF9246C6D9D00A9F385 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AB01ECFA246C6DA600A9F385 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		AB01ECFB246C6DAC00A9F385 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AB01ECFD246C6DC800A9F385 /* Bill.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AB01ECFC246C6DB100A9F385 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AB01ECFF246C6E0B00A9F385 /* Person */ = {
+			isa = PBXGroup;
+			children = (
+				AB01ED03246C6E2500A9F385 /* Model */,
+				AB01ED02246C6E2100A9F385 /* View */,
+				AB01ED01246C6E1D00A9F385 /* View Model */,
+				AB01ED00246C6E1800A9F385 /* Controller */,
+			);
+			path = Person;
+			sourceTree = "<group>";
+		};
+		AB01ED00246C6E1800A9F385 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AB01ED01246C6E1D00A9F385 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		AB01ED02246C6E2100A9F385 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AB01ED04246C6E3F00A9F385 /* Person.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AB01ED03246C6E2500A9F385 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AB01ED06246C72CB00A9F385 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				AB01ED0A246C72E600A9F385 /* Model */,
+				AB01ED09246C72DC00A9F385 /* View */,
+				AB01ED08246C72D700A9F385 /* View Model */,
+				AB01ED07246C72D100A9F385 /* Controller */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		AB01ED07246C72D100A9F385 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AB01ED08246C72D700A9F385 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		AB01ED09246C72DC00A9F385 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AB01ED0B246C72F700A9F385 /* Configuration.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AB01ED0A246C72E600A9F385 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		ABE2A875246C530100CB1289 = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +250,9 @@
 		ABE2A8A6246C5F3700CB1289 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				AB01ED06246C72CB00A9F385 /* Configuration */,
+				AB01ECFF246C6E0B00A9F385 /* Person */,
+				AB01ECF8246C6D8A00A9F385 /* Bill */,
 				ABE2A8A7246C5F4600CB1289 /* Main */,
 			);
 			path = Modules;
@@ -253,8 +382,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABE2A88E246C530500CB1289 /* LaunchScreen.storyboard in Resources */,
+				AB01ECFE246C6DC800A9F385 /* Bill.storyboard in Resources */,
 				ABE2A88B246C530500CB1289 /* Assets.xcassets in Resources */,
+				AB01ED0C246C72F700A9F385 /* Configuration.storyboard in Resources */,
 				ABE2A889246C530100CB1289 /* Main.storyboard in Resources */,
+				AB01ED05246C6E3F00A9F385 /* Person.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

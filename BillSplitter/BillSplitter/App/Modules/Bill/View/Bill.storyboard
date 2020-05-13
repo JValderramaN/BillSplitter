@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7Fk-TH-Ej1">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="hh5-Xn-ypr">
+            <objects>
+                <viewController id="7Fk-TH-Ej1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3NN-k5-h7K">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bills" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXO-X9-hey">
+                                <rect key="frame" x="191.5" y="437.5" width="31" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="eXO-X9-hey" firstAttribute="centerY" secondItem="3NN-k5-h7K" secondAttribute="centerY" id="Yrb-7p-ygt"/>
+                            <constraint firstItem="eXO-X9-hey" firstAttribute="centerX" secondItem="3NN-k5-h7K" secondAttribute="centerX" id="diO-v7-Lu7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="esd-IW-C6X"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="doc.on.doc.fill" catalog="system" id="7AK-nb-hzj"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qnt-IO-b5k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2049" y="-217"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gv2-HM-Y29">
+            <objects>
+                <viewController storyboardIdentifier="favoriteBills" id="JpS-eI-X7W" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ncg-S0-apO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorite Bills" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bpJ-40-IYR">
+                                <rect key="frame" x="159" y="437.5" width="96" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="bpJ-40-IYR" firstAttribute="centerX" secondItem="ncg-S0-apO" secondAttribute="centerX" id="bHC-s3-hEb"/>
+                            <constraint firstItem="bpJ-40-IYR" firstAttribute="centerY" secondItem="ncg-S0-apO" secondAttribute="centerY" id="iGI-tc-6KW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aO9-uz-8CP"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="heart.circle.fill" catalog="system" id="jpr-fP-74O"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f82-HQ-6Kq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2048" y="532"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="doc.on.doc.fill" catalog="system" width="117" height="128"/>
+        <image name="heart.circle.fill" catalog="system" width="128" height="121"/>
+    </resources>
+</document>

@@ -24,6 +24,10 @@ class AuthenticatorViewController: UIViewController {
             error: \(error)
             """
             print(result)
+            
+            DispatchQueue.main.async { [weak self] in
+                self?.performSegue(withIdentifier: "goToLobby", sender: nil)
+            }
         }
     }
     
