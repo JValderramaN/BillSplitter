@@ -122,35 +122,6 @@
             </objects>
             <point key="canvasLocation" x="4622" y="-218"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="gv2-HM-Y29">
-            <objects>
-                <viewController storyboardIdentifier="favoriteBills" id="JpS-eI-X7W" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ncg-S0-apO">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorite Bills" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bpJ-40-IYR">
-                                <rect key="frame" x="159" y="437.5" width="96" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="bpJ-40-IYR" firstAttribute="centerX" secondItem="ncg-S0-apO" secondAttribute="centerX" id="bHC-s3-hEb"/>
-                            <constraint firstItem="bpJ-40-IYR" firstAttribute="centerY" secondItem="ncg-S0-apO" secondAttribute="centerY" id="iGI-tc-6KW"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="aO9-uz-8CP"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="" image="heart.circle.fill" catalog="system" id="jpr-fP-74O"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="f82-HQ-6Kq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2048" y="532"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="z01-VT-7kY">
             <objects>
@@ -172,6 +143,5 @@
     </scenes>
     <resources>
         <image name="doc.on.doc.fill" catalog="system" width="117" height="128"/>
-        <image name="heart.circle.fill" catalog="system" width="128" height="121"/>
     </resources>
 </document>

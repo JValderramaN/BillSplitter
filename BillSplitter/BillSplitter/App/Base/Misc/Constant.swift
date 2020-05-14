@@ -9,10 +9,15 @@
 import Foundation
 
 struct Constant {
+    
     static let save = "Save"
     static let name = "Name"
     static let email = "Email"
     static let phone = "Phone"
     static let amount = "Amount ($)"
     static let tapForAction = "Tap for action"
+    static let closeSession = "Close session"
+    static let cleanDatabase = "Clean Database"
+    static let credits = "-José Valderrama-"
+    
 }

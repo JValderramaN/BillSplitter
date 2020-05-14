@@ -25,6 +25,7 @@
 		AB6B8F22246D19810075E9CA /* BillListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6B8F21246D19810075E9CA /* BillListViewController.swift */; };
 		AB6B8F24246D19DE0075E9CA /* BillViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6B8F23246D19DE0075E9CA /* BillViewModel.swift */; };
 		AB6B8F26246D1A5B0075E9CA /* BillDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6B8F25246D1A5B0075E9CA /* BillDetailTableViewController.swift */; };
+		AB6B8F28246D2E900075E9CA /* ConfigurationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6B8F27246D2E900075E9CA /* ConfigurationTableViewController.swift */; };
 		ABB2B5D0246CF7C600B62910 /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB2B5CE246CF7C600B62910 /* ButtonTableViewCell.swift */; };
 		ABB2B5D1246CF7C600B62910 /* ButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABB2B5CF246CF7C600B62910 /* ButtonTableViewCell.xib */; };
 		ABB2B5D4246CFA7000B62910 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB2B5D3246CFA7000B62910 /* Constant.swift */; };
@@ -64,6 +65,7 @@
 		AB6B8F21246D19810075E9CA /* BillListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillListViewController.swift; sourceTree = "<group>"; };
 		AB6B8F23246D19DE0075E9CA /* BillViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillViewModel.swift; sourceTree = "<group>"; };
 		AB6B8F25246D1A5B0075E9CA /* BillDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillDetailTableViewController.swift; sourceTree = "<group>"; };
+		AB6B8F27246D2E900075E9CA /* ConfigurationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationTableViewController.swift; sourceTree = "<group>"; };
 		ABB2B5CE246CF7C600B62910 /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTableViewCell.swift; sourceTree = "<group>"; };
 		ABB2B5CF246CF7C600B62910 /* ButtonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonTableViewCell.xib; sourceTree = "<group>"; };
 		ABB2B5D3246CFA7000B62910 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
@@ -194,9 +196,7 @@
 		AB01ED06246C72CB00A9F385 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
-				AB01ED0A246C72E600A9F385 /* Model */,
 				AB01ED09246C72DC00A9F385 /* View */,
-				AB01ED08246C72D700A9F385 /* View Model */,
 				AB01ED07246C72D100A9F385 /* Controller */,
 			);
 			path = Configuration;
@@ -205,15 +205,9 @@
 		AB01ED07246C72D100A9F385 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				AB6B8F27246D2E900075E9CA /* ConfigurationTableViewController.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		AB01ED08246C72D700A9F385 /* View Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "View Model";
 			sourceTree = "<group>";
 		};
 		AB01ED09246C72DC00A9F385 /* View */ = {
@@ -222,13 +216,6 @@
 				AB01ED0B246C72F700A9F385 /* Configuration.storyboard */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		AB01ED0A246C72E600A9F385 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		AB0ABA95246CDBCC00ED2461 /* View */ = {
@@ -333,19 +320,11 @@
 		ABE2A8A7246C5F4600CB1289 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				ABE2A8A8246C5F5900CB1289 /* Model */,
 				ABE2A8A9246C5F5D00CB1289 /* View */,
 				ABE2A8AA246C5F6400CB1289 /* View Model */,
 				ABE2A8AB246C5F6A00CB1289 /* Controller */,
 			);
 			path = Main;
-			sourceTree = "<group>";
-		};
-		ABE2A8A8246C5F5900CB1289 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		ABE2A8A9246C5F5D00CB1289 /* View */ = {
@@ -480,6 +459,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB6B8F28246D2E900075E9CA /* ConfigurationTableViewController.swift in Sources */,
 				ABB2B5D0246CF7C600B62910 /* ButtonTableViewCell.swift in Sources */,
 				AB0ABA90246CD75400ED2461 /* Person.swift in Sources */,
 				AB0ABA9D246CE67D00ED2461 /* PersonDetailTableViewController.swift in Sources */,
