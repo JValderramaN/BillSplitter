@@ -11,7 +11,7 @@
         <!--Person List View Controller-->
         <scene sceneID="olm-bx-jUl">
             <objects>
-                <viewController id="gmY-8X-Hfi" customClass="PersonListViewController" customModule="Bill_Splitter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PersonListViewController" id="gmY-8X-Hfi" customClass="PersonListViewController" customModule="Bill_Splitter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wm4-FN-Gf8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

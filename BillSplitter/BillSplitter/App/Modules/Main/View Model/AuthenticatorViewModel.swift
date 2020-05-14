@@ -19,12 +19,10 @@ struct AuthenticatorViewModel {
         var error: NSError?
         
         guard context.canEvaluatePolicy(policy, error: &error) else {
-            print("NO")
             callback(false, error)
             return
         }
         
-        print("YES")
         context.evaluatePolicy(policy, localizedReason: reason, reply: callback)
     }
     

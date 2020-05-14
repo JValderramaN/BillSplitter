@@ -100,11 +100,27 @@
                             <outlet property="delegate" destination="ZpC-Nf-vJX" id="DSB-go-ic1"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="fvx-Zo-cbm"/>
+                    <navigationItem key="navigationItem" id="fvx-Zo-cbm">
+                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="4Rn-gF-2Y2">
+                            <connections>
+                                <segue destination="AUS-DI-Y9R" kind="show" identifier="goToPersonList" id="UQN-PA-E29"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bi3-3E-ZOn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3964" y="-218"/>
+        </scene>
+        <!--PersonListViewController-->
+        <scene sceneID="btc-iZ-JP0">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Person" referencedIdentifier="PersonListViewController" id="AUS-DI-Y9R" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="YHG-n8-ajD"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p4X-Tk-xFi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4622" y="-218"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="gv2-HM-Y29">

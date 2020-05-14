@@ -20,6 +20,8 @@ class PersonListViewController: UIViewController {
         }
     }
     
+    var selectedPersons: List<Person>?
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         persons = try? viewModel.persons()
@@ -58,6 +60,12 @@ extension PersonListViewController: UITableViewDataSource {
             cell.imageView?.image = UIImage(data: imageData)
         }
         
+        if let selectedPersons = selectedPersons, selectedPersons.contains(person) {
+            cell.accessoryType = .checkmark
+        } else {
+            cell.accessoryType = .none
+        }
+        
         return cell
     }
     
@@ -79,7 +87,23 @@ extension PersonListViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let persons = persons else { return }
-        performSegue(withIdentifier: "goToPersonDetail", sender: persons[indexPath.row])
+        let person = persons[indexPath.row]
+        
+        if let selectedPersons = selectedPersons {
+            do {
+                let realm = try Realm()
+                try realm.write() {
+                    if let currentIndex = selectedPersons.index(of: person) {
+                        selectedPersons.remove(at: currentIndex)
+                    } else {
+                        selectedPersons.insert(person, at: 0)
+                    }
+                }
+                tableView.reloadRows(at: [indexPath], with: .fade)
+            } catch {}
+        } else {
+            performSegue(withIdentifier: "goToPersonDetail", sender: person)
+        }
     }
     
 }

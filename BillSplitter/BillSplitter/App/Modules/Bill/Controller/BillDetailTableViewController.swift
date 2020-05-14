@@ -23,6 +23,13 @@ class BillDetailTableViewController: UITableViewController {
         tableView.register(UINib(nibName: ButtonTableViewCell.cellIdentifier, bundle: nil), forCellReuseIdentifier: ButtonTableViewCell.cellIdentifier)
         title = bill.name
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToPersonList",
+            let detailVC = segue.destination as? PersonListViewController {
+            detailVC.selectedPersons = bill.persons
+        }
+    }
 
     // MARK: - Table view data source
 
@@ -77,9 +84,7 @@ extension BillDetailTableViewController: ButtonTableViewCellDelegate {
         do {
             try viewModel.updateAndSave(bill, name: name, total: total)
             navigationController?.popViewController(animated: true)
-        } catch {
-            print(error)
-        }
+        } catch {}
     }
     
 }
