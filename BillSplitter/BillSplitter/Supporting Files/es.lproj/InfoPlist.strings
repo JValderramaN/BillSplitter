@@ -1,0 +1,3 @@
+"NSFaceIDUsageDescription" = "Por favor, indentificate";
+"NSCameraUsageDescription" = "Usa la cámara para configurar una imagen a un item";
+"NSPhotoLibraryUsageDescription" = "Usa la galeria de fotos para configurar una imagen a un item";

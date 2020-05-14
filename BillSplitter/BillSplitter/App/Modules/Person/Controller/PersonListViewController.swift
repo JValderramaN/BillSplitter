@@ -20,7 +20,7 @@ class PersonListViewController: UIViewController {
         }
     }
     
-    var selectedPersons: List<Person>?
+    var bill: Bill?
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -54,16 +54,18 @@ extension PersonListViewController: UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "personCell", for: indexPath)
         cell.textLabel?.text = person.name
-        cell.detailTextLabel?.text = "$ 0.0"
         
         if let imageData = person.imageData {
             cell.imageView?.image = UIImage(data: imageData)
         }
         
-        if let selectedPersons = selectedPersons, selectedPersons.contains(person) {
-            cell.accessoryType = .checkmark
+        if let bill = bill,
+            bill.persons.contains(person) {
+            cell.accessoryType = .checkmark            
+            cell.detailTextLabel?.text = "$ \(bill.total/Float(bill.persons.count))"
         } else {
             cell.accessoryType = .none
+            cell.detailTextLabel?.text = "$ 0.0"
         }
         
         return cell
@@ -89,7 +91,7 @@ extension PersonListViewController: UITableViewDelegate {
         guard let persons = persons else { return }
         let person = persons[indexPath.row]
         
-        if let selectedPersons = selectedPersons {
+        if let selectedPersons = bill?.persons {
             do {
                 let realm = try Realm()
                 try realm.write() {
@@ -99,7 +101,7 @@ extension PersonListViewController: UITableViewDelegate {
                         selectedPersons.insert(person, at: 0)
                     }
                 }
-                tableView.reloadRows(at: [indexPath], with: .fade)
+                tableView.reloadData()
             } catch {}
         } else {
             performSegue(withIdentifier: "goToPersonDetail", sender: person)

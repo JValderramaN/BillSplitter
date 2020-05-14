@@ -27,7 +27,7 @@ class BillDetailTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToPersonList",
             let detailVC = segue.destination as? PersonListViewController {
-            detailVC.selectedPersons = bill.persons
+            detailVC.bill = bill
         }
     }
 
