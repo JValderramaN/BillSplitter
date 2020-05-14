@@ -52,7 +52,7 @@ extension PersonListViewController: UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "personCell", for: indexPath)
         cell.textLabel?.text = person.name
-        cell.detailTextLabel?.text = "$0.0"
+        cell.detailTextLabel?.text = "$ 0.0"
         
         if let imageData = person.imageData {
             cell.imageView?.image = UIImage(data: imageData)

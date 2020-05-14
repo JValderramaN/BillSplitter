@@ -24,6 +24,8 @@ class PersonDetailTableViewController: UITableViewController {
         tableView.register(UINib(nibName: ImageTableViewCell.cellIdentifier, bundle: nil), forCellReuseIdentifier: ImageTableViewCell.cellIdentifier)
         tableView.register(UINib(nibName: TextFieldTableViewCell.cellIdentifier, bundle: nil), forCellReuseIdentifier: TextFieldTableViewCell.cellIdentifier)
         tableView.register(UINib(nibName: ButtonTableViewCell.cellIdentifier, bundle: nil), forCellReuseIdentifier: ButtonTableViewCell.cellIdentifier)
+        
+        title = person.name
     }
     
     private func presentImagePicker() {
@@ -90,6 +92,7 @@ class PersonDetailTableViewController: UITableViewController {
             }
             
             buttonCell.configure(with: Constant.save, delegate: self)
+            cell = buttonCell
         default:
             break
         }

@@ -21,6 +21,10 @@
 		AB0ABA99246CDBEF00ED2461 /* TextFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB0ABA97246CDBEF00ED2461 /* TextFieldTableViewCell.xib */; };
 		AB0ABA9B246CE62D00ED2461 /* PersonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0ABA9A246CE62D00ED2461 /* PersonListViewController.swift */; };
 		AB0ABA9D246CE67D00ED2461 /* PersonDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0ABA9C246CE67D00ED2461 /* PersonDetailTableViewController.swift */; };
+		AB6B8F20246D16C00075E9CA /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6B8F1F246D16C00075E9CA /* Bill.swift */; };
+		AB6B8F22246D19810075E9CA /* BillListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6B8F21246D19810075E9CA /* BillListViewController.swift */; };
+		AB6B8F24246D19DE0075E9CA /* BillViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6B8F23246D19DE0075E9CA /* BillViewModel.swift */; };
+		AB6B8F26246D1A5B0075E9CA /* BillDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6B8F25246D1A5B0075E9CA /* BillDetailTableViewController.swift */; };
 		ABB2B5D0246CF7C600B62910 /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB2B5CE246CF7C600B62910 /* ButtonTableViewCell.swift */; };
 		ABB2B5D1246CF7C600B62910 /* ButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABB2B5CF246CF7C600B62910 /* ButtonTableViewCell.xib */; };
 		ABB2B5D4246CFA7000B62910 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB2B5D3246CFA7000B62910 /* Constant.swift */; };
@@ -56,6 +60,10 @@
 		AB0ABA97246CDBEF00ED2461 /* TextFieldTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldTableViewCell.xib; sourceTree = "<group>"; };
 		AB0ABA9A246CE62D00ED2461 /* PersonListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonListViewController.swift; sourceTree = "<group>"; };
 		AB0ABA9C246CE67D00ED2461 /* PersonDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailTableViewController.swift; sourceTree = "<group>"; };
+		AB6B8F1F246D16C00075E9CA /* Bill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
+		AB6B8F21246D19810075E9CA /* BillListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillListViewController.swift; sourceTree = "<group>"; };
+		AB6B8F23246D19DE0075E9CA /* BillViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillViewModel.swift; sourceTree = "<group>"; };
+		AB6B8F25246D1A5B0075E9CA /* BillDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillDetailTableViewController.swift; sourceTree = "<group>"; };
 		ABB2B5CE246CF7C600B62910 /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTableViewCell.swift; sourceTree = "<group>"; };
 		ABB2B5CF246CF7C600B62910 /* ButtonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonTableViewCell.xib; sourceTree = "<group>"; };
 		ABB2B5D3246CFA7000B62910 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
@@ -109,6 +117,8 @@
 		AB01ECF9246C6D9D00A9F385 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				AB6B8F21246D19810075E9CA /* BillListViewController.swift */,
+				AB6B8F25246D1A5B0075E9CA /* BillDetailTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -116,6 +126,7 @@
 		AB01ECFA246C6DA600A9F385 /* View Model */ = {
 			isa = PBXGroup;
 			children = (
+				AB6B8F23246D19DE0075E9CA /* BillViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -131,6 +142,7 @@
 		AB01ECFC246C6DB100A9F385 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AB6B8F1F246D16C00075E9CA /* Bill.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -472,6 +484,10 @@
 				AB0ABA90246CD75400ED2461 /* Person.swift in Sources */,
 				AB0ABA9D246CE67D00ED2461 /* PersonDetailTableViewController.swift in Sources */,
 				ABB2B5D6246CFD2B00B62910 /* PersonViewModel.swift in Sources */,
+				AB6B8F20246D16C00075E9CA /* Bill.swift in Sources */,
+				AB6B8F26246D1A5B0075E9CA /* BillDetailTableViewController.swift in Sources */,
+				AB6B8F24246D19DE0075E9CA /* BillViewModel.swift in Sources */,
+				AB6B8F22246D19810075E9CA /* BillListViewController.swift in Sources */,
 				AB0ABA93246CDA5A00ED2461 /* ImageTableViewCell.swift in Sources */,
 				AB0ABA98246CDBEF00ED2461 /* TextFieldTableViewCell.swift in Sources */,
 				AB0ABA9B246CE62D00ED2461 /* PersonListViewController.swift in Sources */,

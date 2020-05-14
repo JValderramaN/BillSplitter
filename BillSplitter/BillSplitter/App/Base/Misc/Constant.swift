@@ -13,5 +13,6 @@ struct Constant {
     static let name = "Name"
     static let email = "Email"
     static let phone = "Phone"
+    static let amount = "Amount ($)"
     static let tapForAction = "Tap for action"
 }
