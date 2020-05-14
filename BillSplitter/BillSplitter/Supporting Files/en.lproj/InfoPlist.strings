@@ -1,0 +1,3 @@
+"NSFaceIDUsageDescription" = "Plesase, authenticate yourself";
+"NSCameraUsageDescription" = "Use camera to set image to a item";
+"NSPhotoLibraryUsageDescription" = "Use photo library to set images to a item";

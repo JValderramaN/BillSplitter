@@ -1,0 +1,16 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '10.0'
+#use_frameworks!
+
+target 'BillSplitter' do
+
+  # Pods for BillSplitter
+  pod 'Realm', :modular_headers => true
+  pod 'RealmSwift', :modular_headers => true #, '3.17.3'
+
+  target 'BillSplitterTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

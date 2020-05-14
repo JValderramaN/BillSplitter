@@ -18,17 +18,18 @@ class AuthenticatorViewController: UIViewController {
     }
     
     @IBAction func authenticateButtonTapped(_ sender: Any) {
-        viewModel.authenticate { (granted, error) in
-            let result = """
-            granted: \(granted)
-            error: \(error)
-            """
-            print(result)
-            
-            DispatchQueue.main.async { [weak self] in
-                self?.performSegue(withIdentifier: "goToLobby", sender: nil)
-            }
-        }
+        performSegue(withIdentifier: "goToLobby", sender: nil)
+//        viewModel.authenticate { (granted, error) in
+//            let result = """
+//            granted: \(granted)
+//            error: \(error)
+//            """
+//            print(result)
+//
+//            DispatchQueue.main.async { [weak self] in
+//                self?.performSegue(withIdentifier: "goToLobby", sender: nil)
+//            }
+//        }
     }
     
 }
